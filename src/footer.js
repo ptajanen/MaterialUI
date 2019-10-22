@@ -4,7 +4,7 @@ import { Grid, Radio, RadioGroup, TextField, FormGroup, FormControl, FormLabel, 
 
 const useStyles = makeStyles({
     footer: {
-        backgroundColor: "#eeeeee"
+        backgroundColor: "beige"
     },
     form: {
         width: "100%",
@@ -13,10 +13,10 @@ const useStyles = makeStyles({
         justifyContent: "center",
         alignItems: "center",
         padding:25,
-        background:"background-image: linear-gradient(to right top, #eb0635, #e20933, #d90b32, #d10d30, #c80e2e);"
+        background:"rgb(129,1,58)"
     },
     input: {
-        marginBottom: "1rem"
+        marginBottom: "1rem"        
     }
 });
 
@@ -24,8 +24,9 @@ const Footer = () => {
     const classes = useStyles();
     return (
         <footer className={classes.footer}>
-            <Grid container>
-                <Grid item xs={6}></Grid>
+            <Grid container
+            justify="center">
+                <Grid item xs={1}></Grid>
                 <Grid item xs={6}>
                     <form className={classes.form}>
                         <FormControl>
@@ -59,7 +60,7 @@ const Footer = () => {
                             labelPlacement="End"
                             /> 
                         </FormGroup>
-                        <Button variant="contained" color="primary">Submit</Button>
+                        <Button variant="contained" color="black">Submit</Button>
                     </FormControl>
                     </form>
                 </Grid>

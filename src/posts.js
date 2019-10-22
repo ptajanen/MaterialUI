@@ -16,7 +16,7 @@ const useStyles = makeStyles({
       minWidth: 250
     },
     readMoreButton: {
-      fontSize: '.6em',
+      fontSize: '.6em'
     }
   });
 
@@ -58,7 +58,7 @@ const useStyles = makeStyles({
                             <Button 
                                 component={Link}to={`${postitem.id}`}
                                 variant="outlined"
-                                color="primary"
+                                color="secondary"
                                 label="Read more"
                                 value="Read more"
                                 className={classes.readMoreButton}>Read more

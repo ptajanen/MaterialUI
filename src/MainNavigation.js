@@ -7,7 +7,8 @@ const useStyles = makeStyles({
     listitem: {
         display: 'inline-block',
         width: 150,
-        textAlign: 'right'
+        textAlign: 'right',
+        color:'white'
     }
 });
 
