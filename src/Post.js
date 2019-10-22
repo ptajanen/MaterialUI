@@ -1,7 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Typography, Button } from '@material-ui/core';
-import { Link } from 'react-router-dom';
+import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles({
 	imageContainer: {
@@ -15,17 +14,10 @@ const useStyles = makeStyles({
 		maxWidth: 1000,
 		float: 'left',
 		padding: '25px 0 25px 0',
-		// display: 'block',
 	},
 	text: {
 		padding: '25px 0 25px 0',
 		display: 'block',
-	},
-	homeButton: {
-		display: 'block',
-    width: 'fit-content',
-    fontSize: '.7em',
-    textAlign: 'center',
 	}
 })
 
@@ -36,13 +28,14 @@ const Post = ({match, data}) => {
         <div>
             <div style={{ margin: 150, paddingTop:50}}>
                 <Typography variant="caption">Post #{post.id}</Typography>
-                <Typography variant="title">Post #{post.id}</Typography>
+                <Typography variant="h2">{post.title}</Typography>
+				<div className={classes.imageContainer}>
                 <img className={classes.image} src={post.image} alt={post.title}/>
                 <Typography variant="body1" className={classes.text}>
                     {post.text}
+				</Typography>
+			</div>
 
-</Typography>
-<Button variant="outlined" component={Link} to= '/'> Back to home</Button>
           </div>
         </div>
     );

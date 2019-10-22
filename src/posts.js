@@ -10,7 +10,7 @@ import Postdata from './postdata';
 const useStyles = makeStyles({
     text: {
       overflow: 'hidden',
-      height: 80,
+      height: 100,
     },
     card: {
       minWidth: 250
@@ -29,7 +29,10 @@ const useStyles = makeStyles({
     return (
         <div style={{marginTop:150, padding:20}}>
 
-            <Grid container spacing={3}>
+            <Grid container 
+            direction="row"
+            justify="center"
+            spacing={3}>
 
                 {Postdata.map(postitem => (
 
@@ -39,10 +42,10 @@ const useStyles = makeStyles({
                     <CardMedia
                         component="img"
                         alt={postitem.title}
-                        height="100"
+                        height="150"
                         image={postitem.image}
                     />
-                    <CardContent style= {{ height: 110 }}>
+                    <CardContent style= {{ height: 240 }}>
                         <Typography variant="h6">
                             {postitem.title}
                         </Typography>

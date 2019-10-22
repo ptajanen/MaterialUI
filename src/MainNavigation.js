@@ -1,8 +1,6 @@
 import React from 'react';
-import { List, ListItem, ListItemText, Typography } from '@material-ui/core';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
-import {makeStyles } from '@material-ui/styles';
+import { List, ListItem, ListItemText, makeStyles } from '@material-ui/core';
+import { Link } from "react-router-dom";
 
 
 const useStyles = makeStyles({
