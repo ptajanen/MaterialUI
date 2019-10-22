@@ -1,3 +1,4 @@
 
 Material UI exercise
-Link to the app: https://practical-hodgkin-978b68.netlify.com
+
+Link to the app: https://eloquent-wiles-d32ad1.netlify.com/
